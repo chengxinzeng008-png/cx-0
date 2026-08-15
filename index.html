@@ -402,19 +402,48 @@
 <meta name="rights" content="© 2026 Chengxin Zeng. All rights reserved.">
 <link rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">
 <script src="copyright.js" defer></script>
+<meta name="description" content="Chengxin Zeng 的个人文集，收录十一篇关于认知与 AI、政治哲学、行走见证与个人法则的文章与随笔。">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="文章与思辨合集">
+<meta property="og:title" content="文章与思辨合集 · Chengxin Zeng">
+<meta property="og:description" content="认知与 AI、政治哲学、行走见证、个人法则 —— 十一篇文章与随笔。Selected Essays and Reflections.">
+<meta property="og:url" content="https://cx-06.netlify.app/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="文章与思辨合集 · Chengxin Zeng">
+<meta name="twitter:description" content="认知与 AI、政治哲学、行走见证、个人法则 —— 十一篇文章与随笔。">
+<style>
+/* 深色模式：跟随系统设置，夜间阅读不刺眼 */
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#15120e;
+    --ink:#e9e4da;
+    --muted:#a29a8e;
+    --accent:#d8ab5c;
+    --line:#2f2a23;
+  }
+  a{ -webkit-tap-highlight-color:rgba(216,171,92,.2); }
+  .topbar{ background:rgba(21,18,14,.92); }
+  #overlay{ background:rgba(0,0,0,.55); }
+  nav a.active{ background:rgba(216,171,92,.10); }
+  article .abstract{ background:rgba(216,171,92,.07); }
+  #fab-top{ color:#15120e; }
+  ::selection{ background:rgba(216,171,92,.28); }
+}
+</style>
 </head>
 <body>
 <div id="progress"></div>
 
 <div class="topbar">
-  <button class="menu-btn" id="menu-btn" aria-label="打开目录" aria-expanded="false"><span></span></button>
+  <button class="menu-btn" id="menu-btn" aria-label="打开目录" aria-expanded="false" aria-controls="toc"><span></span></button>
   <div class="title">文章与思辨合集</div>
 </div>
 <div id="overlay"></div>
 
 <div class="layout">
 
-<nav id="toc">
+<nav id="toc" aria-label="目录 Contents">
   <h2>目录 Contents</h2>
 
   <div class="chapter">
@@ -521,7 +550,7 @@
     <p>各行其是，并在必要时保持审慎的距离，或许是目前我们能够给出的最不坏的答案。</p>
   </article>
 
-  <article id="a2" class="en">
+  <article id="a2" class="en" lang="en">
     <h3>When the Magic Mirror Became Democratic</h3>
     <div class="meta">随笔 · 2026 年 5 月 26 日</div>
     <p>Few fictional objects capture the human condition as perfectly as the Mirror of Erised in Harry Potter and the Philosopher's Stone. It does not show the world as it is. It shows what the viewer most deeply desires. Harry sees his parents alive, Ron sees himself as a celebrated hero, and Albus Dumbledore claims to see himself holding a pair of woollen socks.</p>
@@ -620,7 +649,7 @@
     <p>立场可以有，道德可以有，但它们不应当凌驾于事实和逻辑之上。否则，理论最终只会变成它最初想要反对的东西。</p>
   </article>
 
-  <article id="a5" class="en">
+  <article id="a5" class="en" lang="en">
     <h3>Why Do So Many Online Crowds Obsess Over "Fighting for Democracy"?</h3>
     <div class="meta">随笔 · 2026 年 4 月 25 日</div>
     <p>Let's be brutally honest.</p>
@@ -909,6 +938,22 @@
     menuBtn.setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
   }
+  // 键盘可访问性：Esc 关闭目录抽屉，打开时把焦点移入目录
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && toc.classList.contains('open')){
+      closeMenu();
+      menuBtn.focus();
+    }
+  });
+  menuBtn.addEventListener('click', function(){
+    setTimeout(function(){
+      if(toc.classList.contains('open')){
+        var first = toc.querySelector('a');
+        if(first) first.focus();
+      }
+    }, 0);
+  });
+
   function closeMenu(){
     toc.classList.remove('open');
     overlay.classList.remove('show');
