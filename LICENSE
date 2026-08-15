@@ -1,0 +1,67 @@
+版权声明 / Copyright Notice
+================================================================
+
+《文章与思辨合集》
+Copyright (c) 2026 Chengxin Zeng
+保留所有权利 / All rights reserved.
+
+----------------------------------------------------------------
+一、内容部分（文字、文章、图片等原创作品）
+----------------------------------------------------------------
+
+本仓库及本站所发布的全部文字、文章、观点、图表与图片，均为
+Chengxin Zeng 的原创作品，自创作完成之日起依据《中华人民共和国
+著作权法》及《保护文学和艺术作品伯尔尼公约》自动享有著作权。
+
+内容部分采用「知识共享 署名-非商业性使用-禁止演绎 4.0 国际」
+(CC BY-NC-ND 4.0) 许可协议：
+https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh
+
+在遵守下列条件的前提下，您可以自由地复制与分发本作品：
+
+  署名 (BY)  — 必须注明作者姓名「Chengxin Zeng」，标明原文链接，
+               并指明是否作出了修改。
+  非商业性使用 (NC) — 不得将本作品用于任何商业目的，包括但不限于
+               付费专栏、广告变现、商业培训、售卖或打包销售。
+  禁止演绎 (ND) — 不得对本作品进行改编、节选重组、二次创作后再行
+               发布；不得删除或修改本版权声明。
+
+明确禁止的行为包括：
+
+  1. 全站镜像、批量抓取、复制本站页面结构后替换署名；
+  2. 将本站内容用于训练商业模型或构建付费数据集，未取得书面授权；
+  3. 删除、遮蔽、篡改文中的署名、版权声明与水印信息；
+  4. 以本人名义或冒用本人身份发布经修改的内容。
+
+超出上述许可范围的任何使用（包括商业转载、改编、翻译出版等），
+须事先取得著作权人的书面授权。授权请通过本站公开的联系方式联系。
+
+违反本声明的，著作权人保留依法追究民事责任并要求赔偿的权利，
+并可依据 DMCA 等机制向相关平台、主机服务商与搜索引擎提起下架请求。
+
+----------------------------------------------------------------
+二、代码部分（HTML / CSS / JavaScript 等实现代码）
+----------------------------------------------------------------
+
+本仓库中的站点实现代码（含 copyright.js）以 MIT 许可协议开放：
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+注：代码的开放许可不构成对第一部分「内容」的任何授权。
