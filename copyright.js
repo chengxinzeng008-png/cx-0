@@ -16,7 +16,7 @@
 
     // 授权域名白名单。留空数组 = 不做域名校验（默认，最安全不误伤）。
     // 想开启防扒站提示，把你的正式域名填进去，例如：['cx-0.netlify.app']
-    allowedHosts: [],
+    allowedHosts: ['cx-06.netlify.app', 'main--cx-06.netlify.app'],
 
     showFooter:        true,  // 底部版权声明（跟随现有配色，不改观感）
     copyAttribution:   true,  // 复制超过一定长度时自动附带出处
